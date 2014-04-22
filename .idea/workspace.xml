@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4576cca3-6117-452e-a87d-29f311ac1047" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\src\chess\Game.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\src\chess\GameWizard.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\src\chess\entity\Board.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\src\chess\entity\Case.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\src\chess\entity\Piece.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\src\chess\entity\PieceType.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\src\chess\entity\Player.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OnlineChess.iml" afterPath="$PROJECT_DIR$/OnlineChess.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" />
+    <list default="true" id="4576cca3-6117-452e-a87d-29f311ac1047" name="Default" comment="dsf">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/black/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/alert-overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/black/bishop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/white/bishop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/black/king.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/white/king.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/black/knight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/white/knight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/last_movement.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/black/pawn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/white/pawn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/black/queen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/white/queen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/black/rook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/img/pieces/white/rook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/entity/Board.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/entity/Case.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/entity/Game.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/GameManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/NewGame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/entity/Piece.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/entity/PieceType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/entity/Player.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/js/board.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/js/chess.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/game.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/newgame.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/js/pieces.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OnlineChess.iws" />
@@ -52,7 +71,7 @@
     <file path="/NewGame.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398155640292" ignored="false" />
     <file path="/pieces.js" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398156573069" ignored="false" />
     <file path="C:/project/erdicto/common/src/main/java/erdicto/common/admin/entity/SimpleTaxDeclaration.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398158644593" ignored="false" />
-    <file path="/Dummy.txt" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398170361731" ignored="false" />
+    <file path="/Dummy.txt" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398170440180" ignored="false" />
     <file path="C:/project/erdicto/.idea/workspace.xml" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398163810534" ignored="false" />
     <file path="/pom.xml" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398163891541" ignored="false" />
     <file path="/style.css" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398166884758" ignored="false" />
@@ -137,7 +156,7 @@
       <file leaf-file-name="OnlineChess.iml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OnlineChess.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="64" selection-start="485" selection-end="485" vertical-scroll-proportion="0.19495413">
+            <state line="32" column="21" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.6238532">
               <folding />
             </state>
           </provider>
@@ -843,6 +862,11 @@
       <updated>1398105212325</updated>
       <workItem from="1398105218904" duration="1332000" />
     </task>
+    <task id="LOCAL-00001" summary="dsf">
+      <created>1398170384834</created>
+      <updated>1398170384834</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -864,6 +888,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -871,7 +896,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16808964" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16808964" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -881,7 +906,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -932,7 +956,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="dsf" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -946,6 +970,7 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="dsf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1071,7 +1096,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OnlineChess.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="64" selection-start="485" selection-end="485" vertical-scroll-proportion="0.19495413">
+        <state line="32" column="21" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.6238532">
           <folding />
         </state>
       </provider>
