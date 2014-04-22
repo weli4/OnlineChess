@@ -187,15 +187,36 @@ public class Game{
                 else{
                     return false;
                 }
-            case KNIGHT: ;
-
+            case KNIGHT:
+                if(!t.getColor().equals(p.getColor()))
+                {
+                    if((tY==pY-2 || tY==pY+2) && (tX==pX+1 || tX==pX-1))
+                    {
+                        return true;
+                    }
+                    else if((tY==pY-1 || tY==pY+1) && (tX==pX+2 || tX==pX-2)){
+                        return true;
+                    }
+                    else{
+                        return false;
+                    }
+                }
+                else{
+                    return false;
+                }
             case BISHOP: ;
 
             case QUEEN: ;
 
-            case KING: ;
+            case KING:
+                if((tY==pY+1 || tY==pY-1) && (tX==pX+1 || tX==pX-1) && !t.getColor().equals(p.getColor())){
+                    return true;
+                }
+                else{
+                    return false;
+                }
         }
-        return true;
+        return false;
     }
 
 }

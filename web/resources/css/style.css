@@ -1,12 +1,12 @@
 #board {
-    width: 440px;
+    width: 520px;
     height: 400px;
     margin: 15px auto;
 }
 
 #board .cell {
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
     float: left;
     text-align: center;
 }
@@ -36,7 +36,6 @@
 .king.black{
     background-image: url("/resources/img/pieces/black/king.png");
 }
-
 .pawn.white{
     background-image: url("/resources/img/pieces/white/pawn.png");
 }
