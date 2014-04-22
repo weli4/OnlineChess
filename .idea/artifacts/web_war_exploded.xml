@@ -1,11 +1,14 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="web:war exploded">
+  <artifact type="war" name="web:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/web_war_exploded</output-path>
-    <root id="root">
+    <root id="archive" name="web_war exploded.war">
       <element id="javaee-facet-resources" facet="OnlineChess/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="OnlineChess" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
         </element>
       </element>
     </root>
