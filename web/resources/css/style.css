@@ -1,0 +1,60 @@
+#board {
+    width: 520px;
+    height: 400px;
+    margin: 15px auto;
+}
+
+#board .cell {
+    width: 65px;
+    height: 65px;
+    float: left;
+    text-align: center;
+}
+
+
+.row:nth-child(odd) .cell:nth-child(even) {
+    background-color: #cfcfcf;
+}
+.row:nth-child(even) .cell:nth-child(odd) {
+    background-color: #cfcfcf;
+}
+.pawn.black{
+    background-image: url("/resources/img/pieces/black/pawn.png");
+}
+.rook.black{
+    background-image: url("/resources/img/pieces/black/rook.png");
+}
+.knight.black{
+    background-image: url("/resources/img/pieces/black/knight.png");
+}
+.bishop.black{
+    background-image: url("/resources/img/pieces/black/bishop.png");
+}
+.queen.black{
+    background-image: url("/resources/img/pieces/black/queen.png");
+}
+.king.black{
+    background-image: url("/resources/img/pieces/black/king.png");
+}
+.pawn.white{
+    background-image: url("/resources/img/pieces/white/pawn.png");
+}
+.rook.white{
+    background-image: url("/resources/img/pieces/white/rook.png");
+}
+.knight.white{
+    background-image: url("/resources/img/pieces/white/knight.png");
+}
+.bishop.white{
+    background-image: url("/resources/img/pieces/white/bishop.png");
+}
+.queen.white{
+    background-image: url("/resources/img/pieces/white/queen.png");
+}
+.king.white{
+    background-image: url("/resources/img/pieces/white/king.png");
+}
+
+
+
+
