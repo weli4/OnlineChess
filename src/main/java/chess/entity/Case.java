@@ -5,7 +5,7 @@ public class Case {
     private int x;
     private int y;
 
-    public Case(int x, int y) {
+    public Case(int y, int x) {
         this.x = x;
         this.y = y;
     }

@@ -23,6 +23,7 @@ public class Game{
         players=new ArrayList<Player>();
         initializeBoard();
     }
+
     private void initializeBoard()
     {
         pieces[0][0] = new Piece("rook", "black");
@@ -67,16 +68,18 @@ public class Game{
         secondPlayer=players.get(2);
         currentPlayer = (firstPlayer.getColor().equals("white")) ? firstPlayer : secondPlayer;
     }
-    public boolean turn(Case from , Case to)
+    public boolean turn(Player player, Case from , Case to)
     {
-        if(currentPlayer.getColor().equals(pieces[from.getX()][from.getY()].getColor()))
+        if(player.equals(currentPlayer) && isValidMove(from, to))
         {
-            pieces[to.getX()][to.getY()]=pieces[from.getX()][from.getY()];
-            pieces[from.getX()][from.getY()]=null;
+            pieces[to.getY()][to.getX()]=pieces[from.getY()][from.getX()];
+            pieces[from.getY()][from.getX()]=null;
+            currentPlayer= (currentPlayer.getColor().equals(secondPlayer.getColor())) ? firstPlayer : secondPlayer;
             return true;
         }
-        else
-            return false;
+        else{
+           return false;
+        }
     }
     public void joinPlayer(Player player)
     {
@@ -146,19 +149,20 @@ public class Game{
     }
 
     private boolean isValidMove(Case from, Case to){
-        Piece p=pieces[from.getX()][from.getY()];
-        Piece t=pieces[to.getX()][to.getY()];
-        int d =  (p.getColor().equals("white")) ? 1 : -1;
+        Piece p=pieces[from.getY()][from.getX()];
+        Piece t=pieces[to.getY()][to.getX()];
+        int d =  (p.getColor().equals("white")) ? -1 : 1;
         int pX = from.getX();
         int pY = from.getY();
         int tX = to.getX();
         int tY = to.getY();
+
         if(p==null || tX>7 || tX<0 || tY>7 || tX<0)
             return false;
-        switch(PieceType.valueOf(p.getName())){
+        switch(PieceType.valueOf(p.getName().toUpperCase())){
             case PAWN:
-                int startY = (p.getColor().equals("white")) ? 1 : 6;
-                if(tY==startY+2*d && pX==tX && t==null && pieces[pX][startY+1*d]==null)
+                int startY = (p.getColor().equals("white")) ? 6 : 1;
+                if(tY==startY+2*d && pX==tX && t==null && pieces[startY+1*d][pX]==null)
                 {
                     return true;
                 }
@@ -172,17 +176,37 @@ public class Game{
                 else{
                     return false;
                 }
-            case ROOK: //Ладья
+            case ROOK:
                 if(tX==pX && tY!=pY || tX!=pX && tY==pY)
                 {
-                    for(int x=pX; x<=pY; x=x+d)
-                    {
-                        for(int y=pY; y<=pY; y=y+d)
-                        {
-
-                        }
+                    if(t.getColor().equals(p.getColor())) {
+                        return false;
                     }
-                    return true;
+                    else if(tX==pX)
+                    {
+                        int dY = (tY>pY) ? 1 : -1;
+                        for(int y=pY; y<pY; y=y+dY)
+                        {
+                            if(pieces[y][tX]!=null){
+                                return false;
+                            }
+                        }
+                        return true;
+                    }
+                    else if(tY==pY)
+                    {
+                        int dX = (tX>pX) ? 1 : -1;
+                        for(int x=pX; x<tX; x=x+dX)
+                        {
+                            if(pieces[tY][x]!=null){
+                                return false;
+                            }
+                        }
+                        return true;
+                    }
+                    else{
+                        return false;
+                    }
                 }
                 else{
                     return false;
@@ -205,9 +229,80 @@ public class Game{
                     return false;
                 }
             case BISHOP: ;
-
+                if(tX==pX || tY==pY)
+                {
+                    return false;
+                }
+                else if(t.getColor().equals(p.getColor()))
+                {
+                    return false;
+                }
+                else
+                {
+                    int dX = (tX>pX) ? 1 : -1;
+                    int dY = (tY>pY) ? 1 : -1;
+                    for(int x=pX; x<tX; x=x+dX)
+                    {
+                        for(int y=pY; y<tY; y=y+dY)
+                        {
+                            if(pieces[y][x]!=null)
+                            {
+                                return false;
+                            }
+                        }
+                    }
+                    return true;
+                }
             case QUEEN: ;
-
+                if(t.getColor().equals(p.getColor())) {
+                    return false;
+                }
+                else if(tX!=pX || tY!=pY){
+                    if(tX==pX)
+                    {
+                        int dY = (tY>pY) ? 1 : -1;
+                        for(int y=pY; y<pY; y=y+dY)
+                        {
+                            if(pieces[y][tX]!=null){
+                                return false;
+                            }
+                        }
+                        return true;
+                    }
+                    else if(tY==pY)
+                    {
+                        int dX = (tX>pX) ? 1 : -1;
+                        for(int x=pX; x<tX; x=x+dX)
+                        {
+                            if(pieces[tY][x]!=null){
+                                return false;
+                            }
+                        }
+                        return true;
+                    }
+                    else{
+                        return false;
+                    }
+                }
+                else if(tX==pX && tY!=pY || tX!=pX && tY==pY)
+                {
+                    int dX = (tX>pX) ? 1 : -1;
+                    int dY = (tY>pY) ? 1 : -1;
+                    for(int x=pX; x<tX; x=x+dX)
+                    {
+                        for(int y=pY; y<tY; y=y+dY)
+                        {
+                            if(pieces[y][x]!=null)
+                            {
+                                return false;
+                            }
+                        }
+                    }
+                    return true;
+                }
+                else{
+                    return false;
+                }
             case KING:
                 if((tY==pY+1 || tY==pY-1) && (tX==pX+1 || tX==pX-1) && !t.getColor().equals(p.getColor())){
                     return true;
@@ -218,5 +313,4 @@ public class Game{
         }
         return false;
     }
-
 }
