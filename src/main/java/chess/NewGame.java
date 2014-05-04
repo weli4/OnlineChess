@@ -27,10 +27,10 @@ public class NewGame extends HttpServlet{
             return;
         }
         ServletContext context = getServletContext();
-        GameManager manager = (GameManager) context.getAttribute("manager");
+        GameManager manager = (GameManager) context.getAttribute("gameManager");
         if (manager == null) {
             manager = new GameManager();
-            context.setAttribute("manager", manager);
+            context.setAttribute("gameManager", manager);
         }
         HttpSession session = request.getSession(true);
         Game game = manager.createGame();
@@ -40,6 +40,7 @@ public class NewGame extends HttpServlet{
         game.joinPlayer(player);
         session.setAttribute("player", player);
         session.setAttribute("game", game);
+        session.setAttribute("gameManager", manager);
         response.sendRedirect("game.jsp");
     }
 

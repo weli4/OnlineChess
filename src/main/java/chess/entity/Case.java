@@ -9,6 +9,11 @@ public class Case {
         this.x = x;
         this.y = y;
     }
+    public Case(String y, String x)
+    {
+        this.x=Integer.valueOf(x);
+        this.y=Integer.valueOf(y);
+    }
 
     public int getX() {
         return x;
