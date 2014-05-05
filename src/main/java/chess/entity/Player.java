@@ -1,8 +1,21 @@
 package chess.entity;
 
+
 public class Player {
     private String name;
     private String color;
+    private ChessTimer timer;
+
+    public Player(){
+        timer=new ChessTimer();
+    }
+    public ChessTimer getTimer() {
+        return timer;
+    }
+
+    public void setTimer(ChessTimer timer) {
+        this.timer = timer;
+    }
 
     public String getName() {
         return name;

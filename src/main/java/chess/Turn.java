@@ -22,16 +22,15 @@ public class Turn extends HttpServlet {
         Game game=(Game)session.getAttribute("game");
         Player player=(Player) session.getAttribute("player");
         String from = request.getParameter("from");
-        Case caseFrom=new Case(from.charAt(0),from.charAt(1));
+        Case caseFrom=new Case(String.valueOf(from.charAt(0)),String.valueOf(from.charAt(1)));
         String to = request.getParameter("to");
-        Case caseTo=new Case(to.charAt(0),to.charAt(1));
-        if(game.turn(player,caseFrom,caseTo)){
-            session.setAttribute("player", player);
+        Case caseTo=new Case(String.valueOf(to.charAt(0)),String.valueOf(to.charAt(1)));
+        if(game.turn(player, caseFrom, caseTo)){
             session.setAttribute("game", game);
             response.sendRedirect("game.jsp");
         }
-        else {
-            response.sendRedirect("game.jsp");
+        else{
+          response.getWriter().write("false");
         }
     }
 }
