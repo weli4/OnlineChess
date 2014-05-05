@@ -2,6 +2,8 @@
     width: 520px;
     height: 400px;
     margin: 15px auto;
+    top: -415px;
+    position: relative;
 }
 
 #board .cell {
@@ -9,6 +11,23 @@
     height: 65px;
     float: left;
     text-align: center;
+}
+.chatBox{
+    height: 380px;
+    width:300px;
+    margin-right:20px;
+    position:relative;
+    top:-415px;
+}
+.chat{
+    border:1px solid grey;
+    overflow: auto;
+    height: 380px;
+    width:300px;
+
+}
+.message{
+    display:block;
 }
 
 

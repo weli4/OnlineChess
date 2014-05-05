@@ -4,17 +4,17 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class ChessTimer extends Thread{
-    private Long total=600000L;
-    private volatile Boolean pause=false;
+    private Long total=600000L;  // milisecs = 10 mins
+    private volatile Boolean pause=false; // 'volatile' means that this field can be changed while thread is running
     @Override
     public void run()
     {
         while(true){
-            if(!pause && total>0)
+            if(!pause && total>0) //pause if not current player turn
             {
                 try{
                     total=total-1000;
-                    this.sleep(1000);
+                    this.sleep(1000);   //every second decrement total value;
                 }
                 catch (InterruptedException e) {
                     e.printStackTrace();

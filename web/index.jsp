@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="gameManager" scope="application" class="chess.GameManager" />
+<jsp:useBean id="player" scope="session" class="chess.entity.Player" />
 <html>
   <head>
     <title></title>

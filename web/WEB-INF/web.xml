@@ -40,6 +40,24 @@
         <url-pattern>/update</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>SendMessage</servlet-name>
+        <servlet-class>chess.SendMessage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SendMessage</servlet-name>
+        <url-pattern>/sendMessage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewPlayer</servlet-name>
+        <servlet-class>chess.NewPlayer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewPlayer</servlet-name>
+        <url-pattern>/newPlayer</url-pattern>
+    </servlet-mapping>
+
     <session-config>
         <session-timeout>
             500

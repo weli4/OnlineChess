@@ -2,6 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4576cca3-6117-452e-a87d-29f311ac1047" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/DAO/ConnectionManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_9_3_1100_jdbc41.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/entity/Message.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/NewPlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/DAO/PlayerDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/test/chess/DAO/PlayerDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/chess/SendMessage.java" />
+      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\src\main\java\test\chess\entity\GameTest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\web\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\web\resources\js\board.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\IDEA\OnlineChess\web\resources\js\chess.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\IDEA\OnlineChess\web\newgame.jsp" afterPath="$PROJECT_DIR$/web/newplayer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chess/entity/ChessTimer.java" afterPath="$PROJECT_DIR$/src/main/java/chess/entity/ChessTimer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chess/entity/Game.java" afterPath="$PROJECT_DIR$/src/main/java/chess/entity/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chess/NewGame.java" afterPath="$PROJECT_DIR$/src/main/java/chess/NewGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OnlineChess.iml" afterPath="$PROJECT_DIR$/OnlineChess.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chess/entity/Player.java" afterPath="$PROJECT_DIR$/src/main/java/chess/entity/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chess/Update.java" afterPath="$PROJECT_DIR$/src/main/java/chess/Update.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/game.jsp" afterPath="$PROJECT_DIR$/web/game.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/js/pieces.js" afterPath="$PROJECT_DIR$/web/resources/js/pieces.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/css/style.css" afterPath="$PROJECT_DIR$/web/resources/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OnlineChess.iws" />
@@ -30,18 +54,18 @@
     <file path="$PROJECT_DIR$/../test/src/chess/Move.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398152134145" ignored="false" />
     <file path="$PROJECT_DIR$/../test/src/chess/GiveUp.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398152139561" ignored="false" />
     <file path="$PROJECT_DIR$/../test/web/chess.jsp" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398152839302" ignored="false" />
-    <file path="/game.jsp" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398173797644" ignored="false" />
-    <file path="/web.xml" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398154278059" ignored="false" />
-    <file path="/index.jsp" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398163555268" ignored="false" />
+    <file path="/game.jsp" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399280768523" ignored="false" />
+    <file path="/web.xml" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399281257974" ignored="false" />
+    <file path="/index.jsp" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399284622233" ignored="false" />
     <file path="/GameWizard.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398155621538" ignored="false" />
-    <file path="/Game.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398347128601" ignored="false" />
+    <file path="/Game.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399278029556" ignored="false" />
     <file path="/NewGame.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398155640292" ignored="false" />
-    <file path="/pieces.js" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398156573069" ignored="false" />
+    <file path="/pieces.js" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399280640361" ignored="false" />
     <file path="C:/project/erdicto/common/src/main/java/erdicto/common/admin/entity/SimpleTaxDeclaration.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398158644593" ignored="false" />
-    <file path="/Dummy.txt" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399275897266" ignored="false" />
+    <file path="/Dummy.txt" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399283096448" ignored="false" />
     <file path="C:/project/erdicto/.idea/workspace.xml" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398345564225" ignored="false" />
     <file path="/pom.xml" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398163891541" ignored="false" />
-    <file path="/style.css" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398171910310" ignored="false" />
+    <file path="/style.css" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399279034917" ignored="false" />
     <file path="C:/project/erdicto/common/src/main/java/erdicto/common/utils/SimpleTaxDeclarationConverter.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398328556233" ignored="false" />
     <file path="/SimpleTaxDeclarationConverter.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398327706304" ignored="false" />
     <file path="C:/project/erdicto/finance/src/main/resources/config-dev.properties" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398345132092" ignored="false" />
@@ -53,6 +77,16 @@
     <file path="/Case.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398343547444" ignored="false" />
     <file path="/PieceType.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398343908450" ignored="false" />
     <file path="/Turn.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1398347802313" ignored="false" />
+    <file path="/Message.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399277053686" ignored="false" />
+    <file path="/SendMessage.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399278089071" ignored="false" />
+    <file path="/ChessTimer.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399280216954" ignored="false" />
+    <file path="/NewPlayer.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399281302671" ignored="false" />
+    <file path="/ConnectionManager.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399281861983" ignored="false" />
+    <file path="/PlayerDAO.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399284484105" ignored="false" />
+    <file path="/Player.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399282488915" ignored="false" />
+    <file path="/PlayerDAOTest.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399284540401" ignored="false" />
+    <file path="/fragment.java" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399283096448" ignored="false" />
+    <file path="/newplayer.jsp" changelist="4576cca3-6117-452e-a87d-29f311ac1047" time="1399284702817" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,65 +147,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="76" selection-start="2600" selection-end="2600" vertical-scroll-proportion="-6.9259257">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Case.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/Case.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="35" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/chess/entity/GameTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="5" selection-start="3169" selection-end="3169" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NewGame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/chess/NewGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="126" selection-start="676" selection-end="713" vertical-scroll-proportion="0.0">
+            <state line="44" column="5" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chess/GameManager.java">
+      <file leaf-file-name="game.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/game.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+            <state line="22" column="18" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Turn.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chess/Turn.java">
+      <file leaf-file-name="newplayer.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/newplayer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="46" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.0">
+            <state line="5" column="6" selection-start="114" selection-end="114" vertical-scroll-proportion="-3.2692308">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Piece.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/Piece.java">
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+            <state line="8" column="30" selection-start="336" selection-end="336" vertical-scroll-proportion="-5.230769">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewPlayer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/chess/NewPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="46" selection-start="937" selection-end="937" vertical-scroll-proportion="0.82167834">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendMessage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/chess/SendMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="17" selection-start="415" selection-end="1001" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/chess/DAO/PlayerDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="10" selection-start="2964" selection-end="3199" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,18 +219,38 @@
       <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+            <state line="13" column="35" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PieceType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/PieceType.java">
+      <file leaf-file-name="ConnectionManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/chess/DAO/ConnectionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="29" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+            <state line="11" column="73" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="26" selection-start="1830" selection-end="1830" vertical-scroll-proportion="-17.076923">
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -212,22 +272,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/chess/GameWizard.java" />
-        <option value="$PROJECT_DIR$/src/chess/NewGame.java" />
-        <option value="$PROJECT_DIR$/web/resources/js/board.js" />
-        <option value="$PROJECT_DIR$/src/chess/entity/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chess/entity/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chess/SendMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chess/entity/ChessTimer.java" />
         <option value="$PROJECT_DIR$/web/resources/js/pieces.js" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/chess/entity/Piece.java" />
         <option value="$PROJECT_DIR$/web/resources/css/style.css" />
         <option value="$PROJECT_DIR$/web/game.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/chess/entity/Case.java" />
-        <option value="$PROJECT_DIR$/src/main/java/chess/entity/PieceType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/chess/entity/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/chess/entity/GameTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/chess/Turn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chess/NewGame.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/chess/DAO/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chess/entity/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chess/DAO/PlayerDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/chess/DAO/PlayerDAOTest.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/newplayer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/chess/NewPlayer.java" />
       </list>
     </option>
   </component>
@@ -448,7 +508,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
+              <option name="myItemId" value="DAO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,6 +565,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineChess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineChess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chess" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DAO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -514,7 +604,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -527,14 +617,15 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="Downloaded.Files.Path" value="C:\IDEA\OnlineChess\lib" />
     <property name="dynamic.classpath" value="false" />
+    <property name="Downloaded.Files.Path" value="C:\IDEA\OnlineChess\lib" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -548,39 +639,7 @@
       <recent name="E:\IDEA projects\OnlineChess\src\chess\entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest">
-    <configuration default="false" name="GameTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.chess.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="OnlineChess" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.chess.entity" />
-      <option name="MAIN_CLASS_NAME" value="test.chess.entity.GameTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.PlayerDAOTest">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -857,15 +916,42 @@
         </option>
       </method>
     </configuration>
+    <configuration default="false" name="PlayerDAOTest" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.chess.DAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="OnlineChess" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.chess.DAO" />
+      <option name="MAIN_CLASS_NAME" value="test.chess.DAO.PlayerDAOTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PlayerDAOTest" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest" />
-      </list>
-    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -916,14 +1002,18 @@
       <created>1398347948966</created>
       <updated>1398347948966</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="engine">
+      <created>1399275981528</created>
+      <updated>1399275981528</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1332000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -932,12 +1022,13 @@
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.62113124" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3337041" sideWeight="0.62113124" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39933258" sideWeight="0.37886873" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.37886873" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -945,7 +1036,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16808964" sideWeight="0.6006674" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17235859" sideWeight="0.6662959" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -955,7 +1046,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1032,110 +1122,126 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="67" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/js/chess.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="11" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="44" selection-start="615" selection-end="615" vertical-scroll-proportion="0.4722222" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="1" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0" />
+        <state line="16" column="18" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/game.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="71" selection-start="887" selection-end="887" vertical-scroll-proportion="-13.730769" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/Case.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chess/GameManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+        <state line="22" column="18" selection-start="1033" selection-end="1033" vertical-scroll-proportion="-14.384615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chess/NewGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="126" selection-start="676" selection-end="713" vertical-scroll-proportion="0.0">
+        <state line="44" column="5" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/Piece.java">
+    <entry file="file://$PROJECT_DIR$/web/resources/img/alert-overlay.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/img/hover.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/img/last_movement.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+        <state line="19" column="21" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/PieceType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/chess/DAO/ConnectionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+        <state line="11" column="73" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OnlineChess.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/chess/DAO/PlayerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="24" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.8947368" />
+        <state line="97" column="10" selection-start="2964" selection-end="3199" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chess/Turn.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/chess/DAO/PlayerDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="46" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.0">
+        <state line="35" column="44" selection-start="609" selection-end="609" vertical-scroll-proportion="0.5541958">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/chess/entity/GameTest.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="5" selection-start="3169" selection-end="3169" vertical-scroll-proportion="0.0">
+        <state line="57" column="26" selection-start="1830" selection-end="1830" vertical-scroll-proportion="-17.076923">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="30" selection-start="336" selection-end="336" vertical-scroll-proportion="-5.230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chess/entity/Game.java">
+    <entry file="file://$PROJECT_DIR$/web/newplayer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="76" selection-start="2600" selection-end="2600" vertical-scroll-proportion="-6.9259257">
+        <state line="5" column="6" selection-start="114" selection-end="114" vertical-scroll-proportion="-3.2692308">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chess/SendMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="17" selection-start="415" selection-end="1001" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chess/NewPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="46" selection-start="937" selection-end="937" vertical-scroll-proportion="0.82167834">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1146,8 +1252,8 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="artifact" />
               <type id="library" />
+              <type id="artifact" />
               <type id="javaee-facet-resources" />
               <type id="jpa-descriptors" />
             </show-content>

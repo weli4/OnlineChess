@@ -43,10 +43,4 @@ public class NewGame extends HttpServlet{
         session.setAttribute("gameManager", manager);
         response.sendRedirect("game.jsp");
     }
-
-    @Override
-    public String getServletInfo()
-    {
-        return "Start a new game";
-    }
 }

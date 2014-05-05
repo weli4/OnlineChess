@@ -12,10 +12,12 @@ public class Game{
     private Piece[][] pieces = new Piece[8][8];
     private Player currentPlayer;
     private Boolean update;
+    private List<Message> chat;
 
     public Game(){
         id=UUID.randomUUID();
         players=new ArrayList<Player>();
+        chat=new ArrayList<Message>();
         initializeBoard();
         update=false;
     }
@@ -161,6 +163,14 @@ public class Game{
 
     public void setUpdate(Boolean update) {
         this.update = update;
+    }
+
+    public List<Message> getChat() {
+        return chat;
+    }
+
+    public void setChat(List<Message> chat) {
+        this.chat = chat;
     }
 
     private boolean isValidMove(Case from, Case to){

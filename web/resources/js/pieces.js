@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
-     initiliaze();
+    initiliaze();
+    millisecondsToTime();
     setTimeout(update, 1000);
 })
 function initiliaze(){
@@ -29,6 +30,9 @@ function initiliaze(){
         cursor: 'move',
         zIndex: 10
     });
+    $("#sendMessage").click(function(){
+        sendMessage();
+    });
 
 }
 function update(){
@@ -37,6 +41,11 @@ function update(){
             $("#board").replaceWith($(data).filter("#board"));
             initiliaze();
         }
+        if($(".chat").html()!=$(data).filter(".chat").html()){
+            $(".chat").html($(data).filter(".chat").html());
+
+        }
+
         $("#time").text(millisecondsToTime($(data).filter("#time").text()));
         setTimeout(update, 1000);
     });
@@ -45,9 +54,17 @@ function update(){
 
 function millisecondsToTime(milli)
 {
+    if(milli==null){
+        var milli = $("#time").html();
+    }
     var seconds = Math.floor((milli / 1000) % 60);
     var minutes = Math.floor((milli / (60 * 1000)) % 60);
-    return minutes + ":" + seconds;
+    $("#time").text( minutes + ":" + seconds);
 }
+function sendMessage()
+{
+    $.post("sendMessage", {messageText: $("input[name=messageText]").val()});
+}
+
 
 

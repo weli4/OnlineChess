@@ -14,6 +14,15 @@
 <input type="hidden" name="color" value="${player.color}">
 <input type="hidden" name="update" value="${game.update}">
 <div id="time"><c:out value="${player.timer.total}"></c:out></div>
+<div class="chat">
+    <c:forEach items="${game.chat}" var="message">
+        <span class="message">${message.name} : ${message.text}</span>
+    </c:forEach>
+</div>
+<div>
+    <input type="text" name="messageText">
+    <a id="sendMessage" href="#" type="button">send</a>
+</div>
 <div id="board">
     <c:forEach items="${game.pieces}" var="pieces" varStatus="x">
         <div class="row">
