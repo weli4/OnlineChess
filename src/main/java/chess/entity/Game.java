@@ -1,17 +1,20 @@
 package chess.entity;
 
+import chess.DAO.PlayerDAO;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 public class Game{
-    private UUID id;
+    private final UUID id;
     private List<Player> players;
-    private Player firstPlayer;
-    private Player secondPlayer;
+    private Player whitePlayer;
+    private Player blackPlayer;
     private Piece[][] pieces = new Piece[8][8];
     private Player currentPlayer;
     private Boolean update;
+    private Boolean gameOver;
     private List<Message> chat;
 
     public Game(){
@@ -20,8 +23,162 @@ public class Game{
         chat=new ArrayList<Message>();
         initializeBoard();
         update=false;
+        gameOver=false;
+    }
+    public void startGame()
+    {
+        currentPlayer = whitePlayer;
+        currentPlayer.getTimer().start();
+    }
+    public Boolean turn(Player player, Case from , Case to)
+    {
+        if(player.equals(currentPlayer) && isValidMove(from, to) && !gameOver)
+        {
+            pieces[to.getY()][to.getX()]=pieces[from.getY()][from.getX()];
+            pieces[from.getY()][from.getX()]=null;
+            currentPlayer.getTimer().pause();
+            currentPlayer = (currentPlayer.getColor().equals(whitePlayer.getColor())) ? blackPlayer : whitePlayer;
+            update=true;
+            currentPlayer.getTimer().go();
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public void joinPlayer(Player player)
+    {
+        if(players.size()!=2)
+        {
+            if(player.getColor().equals("white"))
+            {
+                whitePlayer=player;
+            }
+            else{
+                blackPlayer=player;
+            }
+            players.add(player);
+            if(players.size()==2)
+            {
+                startGame();
+            }
+        }
+    }
+    public void checkTimers(){
+        if(whitePlayer.getTimer().getTotal()==0)
+        {
+            gameOver(blackPlayer, whitePlayer);
+        }
+        else if(blackPlayer.getTimer().getTotal()==0)
+        {
+            gameOver(whitePlayer, blackPlayer);
+        }
+    }
+    public UUID getId() {
+        return id;
     }
 
+    public List<Player> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(List<Player> players) {
+        this.players = players;
+    }
+
+    public Piece[][] getPieces() {
+        return pieces;
+    }
+
+    public void setPieces(Piece[][] pieces) {
+        this.pieces = pieces;
+    }
+
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
+
+    public void setCurrentPlayer(Player currentPlayer) {
+        this.currentPlayer = currentPlayer;
+    }
+
+    public Boolean getUpdate() {
+        return update;
+    }
+
+    public void setUpdate(Boolean update) {
+        this.update = update;
+    }
+
+    public List<Message> getChat() {
+        return chat;
+    }
+
+    public void setChat(List<Message> chat) {
+        this.chat = chat;
+    }
+
+    public Player getWhitePlayer() {
+        return whitePlayer;
+    }
+
+    public void setWhitePlayer(Player whitePlayer) {
+        this.whitePlayer = whitePlayer;
+    }
+
+    public Player getBlackPlayer() {
+        return blackPlayer;
+    }
+
+    public void setBlackPlayer(Player blackPlayer) {
+        this.blackPlayer = blackPlayer;
+    }
+
+    public Boolean getGameOver() {
+        return gameOver;
+    }
+
+    public void setGameOver(Boolean gameOver) {
+        this.gameOver = gameOver;
+    }
+
+    private boolean isGameOver()
+    {
+        Boolean whiteKnight;
+        Boolean blackKnight;
+        for(int i=0; i<=7;i++)
+        {
+            for(int j=0; j<=7;j++)
+            {
+                if(pieces[i][j]!=null && pieces[i][j].getName().equals("knight"))
+                {
+                    if(pieces[i][j].getColor().equals("white"))
+                    {
+                        whiteKnight=true;
+                    }
+                    else{
+                        blackKnight=true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+    private void gameOver(Player winner, Player looser)
+    {
+        Integer winnerWinCount = winner.getWin()+1;
+        Double winnerRating = winner.getRating()+1;
+        Integer looserRating = looser.getLoose()+1;
+        winner.setWin(winnerWinCount);
+        winner.setRating(winnerRating);
+        looser.setLoose(looserRating);
+        PlayerDAO.update(winner);
+        PlayerDAO.update(looser);
+    }
+    private void withdraw()
+    {
+
+    }
     private void initializeBoard()
     {
         pieces[0][0] = new Piece("rook", "black");
@@ -60,119 +217,6 @@ public class Game{
         pieces[7][6] = new Piece("knight", "white");
         pieces[7][7] = new Piece("rook", "white");
     }
-    public void startGame()
-    {
-        firstPlayer=players.get(0);
-        secondPlayer=players.get(1);
-        currentPlayer = (firstPlayer.getColor().equals("white")) ? firstPlayer : secondPlayer;
-        currentPlayer.getTimer().start();
-    }
-    public Boolean turn(Player player, Case from , Case to)
-    {
-        if(player.equals(currentPlayer) && isValidMove(from, to))
-        {
-            pieces[to.getY()][to.getX()]=pieces[from.getY()][from.getX()];
-            pieces[from.getY()][from.getX()]=null;
-            currentPlayer.getTimer().pause();
-            currentPlayer = (currentPlayer.getColor().equals(secondPlayer.getColor())) ? firstPlayer : secondPlayer;
-            update=true;
-            currentPlayer.getTimer().go();
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-    public void joinPlayer(Player player)
-    {
-        if(players.size()!=2)
-        {
-            players.add(player);
-        }
-        else{
-            startGame();
-        }
-    }
-    public void joinPlayer(String name)
-    {
-        if(players.size()!=2)
-        {
-            Player newPlayer=new Player();
-            newPlayer.setName(name);
-            String newPlayerColor = (players.get(0).getColor().equals("white")) ? "black" : "white";
-            newPlayer.setColor(newPlayerColor);
-            players.add(newPlayer);
-            startGame();
-        }
-        else{
-            startGame();
-        }
-    }
-
-    public UUID getId() {
-        return id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
-    public List<Player> getPlayers() {
-        return players;
-    }
-
-    public void setPlayers(List<Player> players) {
-        this.players = players;
-    }
-
-    public Player getFirstPlayer() {
-        return firstPlayer;
-    }
-
-    public void setFirstPlayer(Player firstPlayer) {
-        this.firstPlayer = firstPlayer;
-    }
-
-    public Player getSecondPlayer() {
-        return secondPlayer;
-    }
-
-    public void setSecondPlayer(Player secondPlayer) {
-        this.secondPlayer = secondPlayer;
-    }
-
-    public Piece[][] getPieces() {
-        return pieces;
-    }
-
-    public void setPieces(Piece[][] pieces) {
-        this.pieces = pieces;
-    }
-
-    public Player getCurrentPlayer() {
-        return currentPlayer;
-    }
-
-    public void setCurrentPlayer(Player currentPlayer) {
-        this.currentPlayer = currentPlayer;
-    }
-
-    public Boolean getUpdate() {
-        return update;
-    }
-
-    public void setUpdate(Boolean update) {
-        this.update = update;
-    }
-
-    public List<Message> getChat() {
-        return chat;
-    }
-
-    public void setChat(List<Message> chat) {
-        this.chat = chat;
-    }
-
     private boolean isValidMove(Case from, Case to){
         Piece p=pieces[from.getY()][from.getX()];
         Piece t=pieces[to.getY()][to.getX()];

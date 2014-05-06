@@ -28,6 +28,10 @@ public class Update extends HttpServlet {
         if(game.getPlayers().size()==2 && game.getCurrentPlayer().equals(player) && game.getUpdate()==true){
             game.setUpdate(false);
         }
-
+        if(game.getGameOver())
+        {
+            GameManager manager=(GameManager)getServletContext().getAttribute("gameManager");
+            manager.getGameMap().remove(game.getId());
+        }
     }
 }

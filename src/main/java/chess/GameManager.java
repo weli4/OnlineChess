@@ -1,6 +1,7 @@
 package chess;
 
 import chess.entity.Game;
+import chess.entity.Player;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,11 +18,11 @@ public class GameManager {
         gameMap.put(game.getId().toString(), game);
         return game;
     }
-    public Game joinGame(String name, String id)
+    public Game joinGame(Player player, String id)
     {
         Game game = gameMap.get(id);
         if(game!=null){
-            game.joinPlayer(name);
+            game.joinPlayer(player);
             return game;
         }
         else{

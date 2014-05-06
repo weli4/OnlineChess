@@ -15,11 +15,11 @@ import chess.entity.Player;
 import java.sql.*;
 
 public class PlayerDAO {
-    private ConnectionManager manager;
+    private static ConnectionManager manager;
     {
         this.manager=new ConnectionManager();
     }
-    public Player insert(String name){
+    public static Player insert(String name){
         Player player = findOne(name);
         if(player!=null)
         {
@@ -49,7 +49,7 @@ public class PlayerDAO {
             }
         }
     }
-    public boolean update(Player player)
+    public static boolean update(Player player)
     {
         Connection c = null;
         try{
@@ -81,7 +81,7 @@ public class PlayerDAO {
             }
         }
     }
-    public Player findOne(String name){
+    public static Player findOne(String name){
         Connection c = null;
         try{
             c = manager.getConnection();

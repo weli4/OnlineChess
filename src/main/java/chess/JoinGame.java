@@ -2,6 +2,7 @@ package chess;
 
 
 import chess.entity.Game;
+import chess.entity.Player;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,12 +20,12 @@ public class JoinGame extends HttpServlet {
         }
 
         GameManager manager=(GameManager)getServletContext().getAttribute("gameManager");
-        String name = request.getParameter("name");
+        Player player=(Player) session.getAttribute("player");
         String id = request.getParameter("id");
-        Game game = manager.joinGame(name, id);
+        Game game = manager.joinGame(player, id);
         if(game!=null){
             session.setAttribute("game", game);
-            session.setAttribute("player", game.getSecondPlayer());
+            session.setAttribute("player", player);
             response.sendRedirect("game.jsp");
         }
         else{

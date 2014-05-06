@@ -23,7 +23,7 @@ public class NewGame extends HttpServlet{
         String name  = request.getParameter("name");
         String color = request.getParameter("color");
         if (name == null || name.isEmpty() || color == null || (!color.equals("white") && !color.equals("black"))) {
-            response.sendRedirect("index.html");
+            response.sendRedirect("index.jsp");
             return;
         }
         ServletContext context = getServletContext();
@@ -34,9 +34,8 @@ public class NewGame extends HttpServlet{
         }
         HttpSession session = request.getSession(true);
         Game game = manager.createGame();
-        Player player = new Player();
+        Player player=(Player) session.getAttribute("player");
         player.setColor(color);
-        player.setName(name);
         game.joinPlayer(player);
         session.setAttribute("player", player);
         session.setAttribute("game", game);
