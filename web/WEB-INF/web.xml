@@ -58,6 +58,15 @@
         <url-pattern>/newPlayer</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Withdraw</servlet-name>
+        <servlet-class>chess.Withdraw</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Withdraw</servlet-name>
+        <url-pattern>/withdraw</url-pattern>
+    </servlet-mapping>
+
     <session-config>
         <session-timeout>
             500

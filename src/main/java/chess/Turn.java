@@ -21,16 +21,16 @@ public class Turn extends HttpServlet {
         }
         Game game=(Game)session.getAttribute("game");
         Player player=(Player) session.getAttribute("player");
-        String from = request.getParameter("from");
+        String from = request.getParameter("from"); //getting coordinates of turn from request
         Case caseFrom=new Case(String.valueOf(from.charAt(0)),String.valueOf(from.charAt(1)));
         String to = request.getParameter("to");
         Case caseTo=new Case(String.valueOf(to.charAt(0)),String.valueOf(to.charAt(1)));
-        if(game.turn(player, caseFrom, caseTo)){
+        if(game.turn(player, caseFrom, caseTo)){  //checking turn
             session.setAttribute("game", game);
-            response.sendRedirect("game.jsp");
+            response.sendRedirect("game.jsp");  //if turn is ok-return the game.jsp and then with pieces.js repaint the board
         }
         else{
-          response.getWriter().write("false");
+            response.getWriter().write("false"); //if not ok-return false;
         }
     }
 }

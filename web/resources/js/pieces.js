@@ -16,16 +16,13 @@ function initiliaze(){
                     $("#board").replaceWith($(data).filter("#board"));
                     initiliaze();
                 }
-                else{
-                    alert("wtf");
-                }
             });
         },
         hoverClass: 'case-hover'
     });
     $('.'+color).draggable({
         opacity: 0.8,
-        revert:  'invalid',
+        revert:  true,
         scroll:  false,
         cursor: 'move',
         zIndex: 10
@@ -59,6 +56,10 @@ function millisecondsToTime(milli)
     }
     var seconds = Math.floor((milli / 1000) % 60);
     var minutes = Math.floor((milli / (60 * 1000)) % 60);
+    if(seconds<10)
+    {
+        seconds='0'+seconds;
+    }
     $("#time").text( minutes + ":" + seconds);
 }
 function sendMessage()

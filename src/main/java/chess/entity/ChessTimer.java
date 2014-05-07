@@ -4,7 +4,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class ChessTimer extends Thread{
-    private Long total=600000L;  // milisecs = 10 mins
+    private volatile Long total=600000L;  // milisecs = 10 mins
     private volatile Boolean pause=false; // 'volatile' means that this field can be changed while thread is running
     @Override
     public void run()
@@ -29,12 +29,17 @@ public class ChessTimer extends Thread{
     public void go()
     {
         if(!this.isAlive()){
-            this.start();
+            this.start();  //start the thread if it is not running
         }
         this.pause=false;
     }
     public Long getTotal() {
         return total;
+    }
+    public void stopTimer()
+    {
+        total=600000L;
+        pause=false;
     }
 
     public void setTotal(Long total) {

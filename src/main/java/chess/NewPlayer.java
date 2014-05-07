@@ -21,8 +21,9 @@ public class NewPlayer extends HttpServlet {
         }
         String name  = request.getParameter("name");
         if(name!=null){
-            Player player = PlayerDAO.insert(name);
-            session.setAttribute("player", player);
+            PlayerDAO dao=new PlayerDAO();
+            Player player = dao.insert(name); //inserting player in DB or get him if he exists
+            session.setAttribute("player", player); //adding player to session, we can get him from session in other servlets
             response.sendRedirect("index.jsp");
         }
         else{

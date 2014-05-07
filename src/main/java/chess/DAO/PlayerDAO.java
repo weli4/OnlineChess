@@ -17,9 +17,10 @@ import java.sql.*;
 public class PlayerDAO {
     private static ConnectionManager manager;
     {
-        this.manager=new ConnectionManager();
+        manager=new ConnectionManager();
+
     }
-    public static Player insert(String name){
+    public Player insert(String name){
         Player player = findOne(name);
         if(player!=null)
         {
@@ -49,7 +50,7 @@ public class PlayerDAO {
             }
         }
     }
-    public static boolean update(Player player)
+    public  boolean update(Player player)
     {
         Connection c = null;
         try{
@@ -81,7 +82,7 @@ public class PlayerDAO {
             }
         }
     }
-    public static Player findOne(String name){
+    public  Player findOne(String name){
         Connection c = null;
         try{
             c = manager.getConnection();

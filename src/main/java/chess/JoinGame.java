@@ -20,10 +20,18 @@ public class JoinGame extends HttpServlet {
         }
 
         GameManager manager=(GameManager)getServletContext().getAttribute("gameManager");
-        Player player=(Player) session.getAttribute("player");
-        String id = request.getParameter("id");
-        Game game = manager.joinGame(player, id);
+        Player player=(Player) session.getAttribute("player"); // getting the player entity from session
+        String id = request.getParameter("id"); //id from the web-form
+        Game game = manager.getGameMap().get(id);  //getting the game from game manager, if null-redirect to index.jsp
         if(game!=null){
+            if(game.getPlayers().get(0).getColor().equals("white")) //changing the player's color
+            {
+                player.setColor("black");
+            }
+            else{
+                player.setColor("white");
+            }
+            game.joinPlayer(player);  //adding the player to game;
             session.setAttribute("game", game);
             session.setAttribute("player", player);
             response.sendRedirect("game.jsp");

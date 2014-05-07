@@ -20,18 +20,17 @@ public class NewGame extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        String name  = request.getParameter("name");
         String color = request.getParameter("color");
-        if (name == null || name.isEmpty() || color == null || (!color.equals("white") && !color.equals("black"))) {
+        if (color == null || (!color.equals("white") && !color.equals("black"))) {
             response.sendRedirect("index.jsp");
             return;
         }
-        ServletContext context = getServletContext();
-        GameManager manager = (GameManager) context.getAttribute("gameManager");
+        GameManager manager = (GameManager)  getServletContext().getAttribute("gameManager");
         if (manager == null) {
             manager = new GameManager();
-            context.setAttribute("gameManager", manager);
+            getServletContext().setAttribute("gameManager", manager);
         }
+        // creating the game and joining player to it
         HttpSession session = request.getSession(true);
         Game game = manager.createGame();
         Player player=(Player) session.getAttribute("player");

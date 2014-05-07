@@ -32,5 +32,9 @@
         </div>
     </c:forEach>
 </div>
+<form action="withdraw">
+    Surrender and return to lobby
+    <button type="submit">Return to lobby</button>
+</form>
 </body>
 </html>

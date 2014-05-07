@@ -13,12 +13,13 @@ public class GameManager {
         if(gameMap==null)
         gameMap=new HashMap<String, Game>();
     }
-    public Game createGame(){
+    public Game createGame()     //creating the game and adding it to hashmap
+    {
         Game game=new Game();
         gameMap.put(game.getId().toString(), game);
         return game;
     }
-    public Game joinGame(Player player, String id)
+    public Game joinGame(Player player, String id)      //join player to game with id;
     {
         Game game = gameMap.get(id);
         if(game!=null){
